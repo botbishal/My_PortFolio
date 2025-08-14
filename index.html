@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Bishal Ray — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Bishal Ray — Software Developer (C#, .NET, JS, React, SQL, MongoDB)"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22><text y=%22.9em%22 font-size=%2290%22>🧑‍💻</text></svg>"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <div class="nav">
+      <div
+        class="container"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        "
+      >
+        <div class="brand">
+          <div class="brand">
+            <span class="dot"></span>
+            <a href="#" onclick="scrollToSection(event, '')" class="brand-link"
+              >Bishal Ray</a
+            >
+          </div>
+        </div>
+        <ul>
+          <li>
+            <a href="#about" onclick="scrollToSection(event, 'about')">About</a>
+          </li>
+          <li>
+            <a href="#experience" onclick="scrollToSection(event, 'experience')"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="#skills" onclick="scrollToSection(event, 'skills')"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a href="#projects" onclick="scrollToSection(event, 'projects')"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              class="btn"
+              onclick="scrollToSection(event, 'contact')"
+              href="#contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <header class="container hero">
+      <div>
+        <img
+          src="assets/files/profile.jpg"
+          alt="Bishal Ray"
+          class="profile-pic reveal"
+        />
+        <h1 class="h-title">
+          Hi, I’m <span class="grad">Bishal Ray</span> —
+          <span id="type-job" class="typing"></span>
+        </h1>
+        <p class="h-sub">
+          MCA graduate (Brainware University) working in Medical IT to build
+          reliable, user-centric software. Daily stack: <b>C#</b>, <b>.NET</b>,
+          <b>JavaScript</b>, <b>jQuery</b>, <b>HTML</b>, <b>CSS</b>.
+        </p>
+        <div class="cta">
+          <a class="btn-primary" href="#projects">See Projects</a>
+          <a
+            class="btn-ghost"
+            target="_blank"
+            href="assets/files/Bishal_Ray_CV.pdf"
+            download
+            >Download Resume</a
+          >
+          <a
+            class="btn-ghost"
+            href="https://www.linkedin.com/in/botbishal"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+        </div>
+        <p class="small" style="margin-top: 8px">
+          Current Location: Barasat • Open to opportunities
+        </p>
+      </div>
+
+      <aside class="hero-card">
+        <div class="badge">Quick Stats</div>
+        <div class="kpis">
+          <div class="kpi">
+            <h4>3+</h4>
+            <p>Major Projects</p>
+          </div>
+          <div class="kpi">
+            <h4>88.77%</h4>
+            <p>MCA (2025)</p>
+          </div>
+          <div class="kpi">
+            <h4>94.75%</h4>
+            <p>BCA (2023)</p>
+          </div>
+        </div>
+        <ul class="list" style="margin-top: 14px">
+          <li>Strong problem solving, teamwork & communication</li>
+          <li>Fast learner • Focused on UI & UX</li>
+        </ul>
+      </aside>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="container">
+      <h2 class="section-title">About</h2>
+      <div class="card reveal">
+        Highly motivated and detail-focused developer with experience across
+        software development, customer service and collaboration. I enjoy
+        transforming ideas into scalable, maintainable solutions and improving
+        user experiences through thoughtful engineering.
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="card reveal">
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-role">
+              <b>Cuba Infotech Pvt. Ltd. — Software Developer</b>
+              <span>Mar 2025 – Present • Medical IT</span>
+            </div>
+            <ul class="list" style="margin-top: 10px">
+              <li>
+                Build diagnostic-sector software using C#, .NET, JavaScript,
+                jQuery, HTML, CSS.
+              </li>
+              <li>
+                Collaborate cross-functionally to enhance reliability and user
+                experience.
+              </li>
+            </ul>
+            <div class="chips" style="margin-top: 10px">
+              <span class="chip">C# / .NET</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">jQuery</span>
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & TRAINING -->
+    <section class="container">
+      <div class="grid two">
+        <div class="card reveal">
+          <h3 style="margin-top: 0">Education</h3>
+          <div class="timeline" style="margin-top: 8px">
+            <div class="t-item">
+              <div class="t-role">
+                <b>MCA — Brainware University</b>
+                <span>2025 • 88.77%</span>
+              </div>
+            </div>
+            <div class="t-item">
+              <div class="t-role">
+                <b>BCA — Brainware University</b>
+                <span>2023 • 94.75%</span>
+              </div>
+            </div>
+            <div class="t-item">
+              <div class="t-role">
+                <b>12th — WBCHSE</b>
+                <span>2020 • 86.6%</span>
+              </div>
+            </div>
+            <div class="t-item">
+              <div class="t-role">
+                <b>10th — WBBSE</b>
+                <span>2018 • 72.14%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <h3 style="margin-top: 0">Training & Workshops</h3>
+          <ul class="list" style="margin-top: 8px">
+            <li>
+              <b>ReactJS (Industrial Training)</b> — WebGuru Infosystems • Nov
+              2024 – Jan 2025
+            </li>
+          </ul>
+          <h3 style="margin: 16px 0 8px">Extra-curricular</h3>
+          <ul class="list">
+            <li>
+              Organized & volunteered at university fresher’s welcome (2024)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="grid two">
+        <div class="card reveal">
+          <h3 style="margin-top: 0">Technical</h3>
+          <div class="chips" style="margin-top: 6px">
+            <span class="chip">C</span>
+            <span class="chip">Java</span>
+            <span class="chip">C#</span>
+            <span class="chip">Python</span>
+            <span class="chip">ASP.NET</span>
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">jQuery</span>
+            <span class="chip">Bootstrap</span>
+            <span class="chip">Laravel</span>
+            <span class="chip">ReactJS</span>
+            <span class="chip">Oracle</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Git</span>
+            <span class="chip">Photoshop</span>
+            <span class="chip">PC Assembly</span>
+          </div>
+        </div>
+        <div class="card reveal">
+          <h3 style="margin-top: 0">Soft Skills</h3>
+          <div class="chips" style="margin-top: 6px">
+            <span class="chip">Problem Solving</span>
+            <span class="chip">Communication</span>
+            <span class="chip">Teamwork</span>
+            <span class="chip">Leadership</span>
+            <span class="chip">Time Management</span>
+            <span class="chip">Adaptability</span>
+            <span class="chip">Goal-oriented</span>
+          </div>
+          <h3 style="margin: 14px 0 6px">Languages</h3>
+          <div class="chips">
+            <span class="chip">English — Read/Write/Speak</span>
+            <span class="chip">Bengali — Read/Write/Speak</span>
+            <span class="chip">Hindi — Speak</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="proj">
+        <article class="card reveal">
+          <h3>Open World Car Simulator</h3>
+          <div class="meta">
+            <span class="badge">Jan 2023 – Jun 2023</span>
+            <span class="badge">Unity • C#</span>
+            <span class="badge">Team Lead (5)</span>
+          </div>
+          <p style="margin-top: 10px">
+            An immersive car simulation game with custom UI systems and core
+            mechanics built in C#. Focused on gameplay feel, performance and
+            clean architecture.
+          </p>
+        </article>
+
+        <article class="card reveal">
+          <h3>FriendZ Chat Application</h3>
+          <div class="meta">
+            <span class="badge">Dec 2024 – Jan 2025</span>
+            <span class="badge">ReactJS • Node • Express • MongoDB</span>
+            <span class="badge">Team Lead (5)</span>
+          </div>
+          <p style="margin-top: 10px">
+            Real-time chat web app designed during ReactJS training,
+            implementing core features and a modern UI with a MERN stack.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- HOBBIES -->
+    <section class="container">
+      <h2 class="section-title">Interests</h2>
+      <div class="card reveal">
+        <div class="chips">
+          <span class="chip">Music</span>
+          <span class="chip">Horror/Thriller Movies & Anime</span>
+          <span class="chip">Online Gaming & Game Dev</span>
+          <span class="chip">Exploring Emerging Tech</span>
+          <span class="chip">Experimenting with Ideas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact">
+        <!-- Contact Info and Map in a 2-column layout -->
+        <div class="card reveal contact-grid">
+          <!-- Left: Contact Info -->
+          <div class="contact-info">
+            <div class="grid" style="gap: 8px">
+              <div class="inline">
+                <span>📧</span>
+                <a class="nowrap" href="mailto:bishalray982@gmail.com">
+                  bishalray982@gmail.com
+                </a>
+              </div>
+              <div class="inline">
+                <span>🔗</span>
+                <a
+                  class="nowrap"
+                  href="https://www.linkedin.com/in/botbishal"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  linkedin.com/in/botbishal
+                </a>
+              </div>
+              <div class="inline">
+                <span>📞</span>
+                <a class="nowrap" href="tel:+916290831385">+91 6290831385</a>
+              </div>
+              <div class="inline">
+                <span>📍</span>
+                <span>
+                  Noapara Old Kali Bari Road,<br />
+                  Barasat, North 24 Parganas,<br />
+                  Kolkata – 700124,<br />
+                  West Bengal, India
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Google Map -->
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps?q=Noapara+Old+Kali+Bari+Road,+Barasat,+Kolkata,+West+Bengal+700124,+India&output=embed"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="card reveal" onsubmit="sendMail(event)">
+          <h3 style="margin-top: 0">Send me a message</h3>
+          <div class="row" style="margin-top: 8px">
+            <input required name="name" placeholder="Your name" />
+            <input required name="email" type="email" placeholder="Email" />
+          </div>
+          <textarea
+            style="margin-top: 8px"
+            required
+            name="message"
+            placeholder="Your message"
+          ></textarea>
+          <button class="btn-primary" type="submit">Send</button>
+          <p id="form-status" class="small" style="margin-top: 8px"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        © <span id="year"></span> Bishal Ray • Built with HTML/CSS/JS
+      </div>
+    </footer>
+
+    <script src="assets/script/scripts.js"></script>
+  </body>
+</html>
