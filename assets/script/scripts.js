@@ -48,6 +48,7 @@ function sendMail(e) {
         "_blank"
       );
       s.textContent = "Opening Gmail…";
+      location.reload();
     } else {
       s.textContent =
         "You cancelled Gmail fallback. You can write to: bishalray982@gmail.com";
